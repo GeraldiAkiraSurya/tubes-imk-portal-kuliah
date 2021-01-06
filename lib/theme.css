@@ -1,0 +1,15 @@
+/* Backgorund Themes */
+.background-theme { background-color: #F2F4F4 !important }
+.background-gradiant-theme { background-image: linear-gradient(to right, #C213FF, #4EFFD4)!important }
+.background-black-theme { background-color: #47443A !important}
+
+/* Effect Themes */
+.drop-shadow-theme { box-shadow: 0px 3px 10px grey !important }
+
+/* Text Color Themes */
+.white-text-theme { color: #ffffff !important}
+
+/* Bar Themes */
+.bar-item:hover { color: #FFFFFF !important; background-color: #47443A !important}
+.bar-item-active { color: #FFFFFF !important; background: linear-gradient(to right, #C213FF, #4EFFD4)!important}
+.bar-item-active:hover { color: #FFFFFF !important; background: #47443A !important}

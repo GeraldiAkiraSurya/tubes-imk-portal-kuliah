@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Quicksand-Light;
+    src: url(../fonts/quicksand.light-regular.otf);
+}
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url(../fonts/quicksand.bold-regular.otf);
+}
+
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url(../fonts/quicksand.book-regular.otf);
+}
+
+h2, h3 {
+    font-family: Quicksand-Bold;
+}
+
+body, p {
+    font-family: Quicksand-Regular;
+}
+
+.content-head {
+    margin-top: 7%;
+}
