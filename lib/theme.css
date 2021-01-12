@@ -10,6 +10,6 @@
 .white-text-theme { color: #ffffff !important}
 
 /* Bar Themes */
-.bar-item:hover { color: #FFFFFF !important; background-color: #47443A !important}
+.bar-item:hover { color: #FFFFFF !important; background-color: #47443A !important; text-decoration: none !important}
 .bar-item-active { color: #FFFFFF !important; background: linear-gradient(to right, #FF6961, #FF9d98)!important}
 .bar-item-active:hover { color: #FFFFFF !important; background: #47443A !important}
