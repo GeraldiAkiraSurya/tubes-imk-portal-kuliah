@@ -26,10 +26,8 @@ body, p {
 }
 
 .staffHeader{
-    border-radius: 50px;
-    background-image: linear-gradient(to right, #cc33ff 35%, #00ccff);
     padding: 20px;
-    width: 500px;
+    width: 63%;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -45,8 +43,7 @@ body, p {
 }
 
 .staff{
-    margin-left: 25%;
-    margin-top: 25px;
+    margin-top: 2%;
 }
 
 .staffBox{
