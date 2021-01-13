@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Staffs Gallery</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
+		id="bootstrap-css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="script/script.js"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="../lib/font-awesome.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../lib/theme.css">
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../lib/theme.css">
 </head>
+
 <body>
 	<!-- HEADER -->
 	<div class="w3-container background-theme w3-top drop-shadow-theme">
@@ -23,31 +26,725 @@
 		</div>
 		<div style="width: 59%;" class="w3-container w3-cell w3-cell-middle w3-bar w3-light-grey">
 			<a href="../index.html" class="w3-bar-item w3-button bar-item">Home</a>
-			<a href="classes.html" class="w3-bar-item w3-button bar-item bar-item-active">Classes</a>
-			<a href="announcements.html" class="w3-bar-item w3-button bar-item">Anouncements</a>
+			<a href="pages/classes.html" class="w3-bar-item w3-button bar-item">Classes</a>
+			<a href="pages/announcements.html" class="w3-bar-item w3-button bar-item">Anouncements</a>
 			<div class="w3-dropdown-hover">
-			  <button class="w3-button bar-item">Informations</button>
-			  <div class="w3-dropdown-content w3-bar-block w3-card-4">
-				<a href="acad-sched.html" class="w3-bar-item w3-button bar-item">Academic Schedule</a>
-				<a href="dept-inf.html" class="w3-bar-item w3-button bar-item">Department Informations</a>
-				<a href="staffs-gallery.html" class="w3-bar-item w3-button bar-item">Staffs Gallery</a>
-			  </div>
+				<button class="w3-button bar-item bar-item-active">Informations</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="pages/acad-sched.html" class="w3-bar-item w3-button bar-item">Academic Schedule</a>
+					<a href="pages/dept-inf.html" class="w3-bar-item w3-button bar-item">Department Informations</a>
+					<a href="pages/staffs-gallery.html" class="w3-bar-item w3-button bar-item bar-item-active">Staffs
+						Gallery</a>
+				</div>
 			</div>
 		</div>
 		<div class="w3-container w3-cell w3-cell-middle w3-bar">
-			<a href="enrollment.html" class="w3-button w3-bar-item bar-item">
+			<a href="pages/enrollment.html" class="w3-button w3-bar-item bar-item">
 				<i class="fa fa-plus"></i>
 			</a>
-			<a href="#" class="w3-button w3-bar-item bar-item">
+			<a href="pages/login.html" class="w3-button w3-bar-item bar-item">
 				<i class="fa fa-user"></i>
 			</a>
 		</div>
 	</div>
-
 	<!-- CONTENT -->
 	<div class="w3-container background-theme content-head">
-		<div>
-			<p>CONTENT HERE</p>
+		<div style="margin-top: 20px; margin-bottom: 20px;">
+			<div class="w3-container staffHeader">
+				<p id="staffText">Staff Gallery</p>
+			</div>
+
+			<div class="w3-container staffContent">
+				<div class="w3-container w3-row-padding staff">
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox"
+						onClick="document.getElementById('info_staff_1').style.display='block'">
+						<img src="../img/DosenV2_NAT_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 50px; font-weight: bold; font-size: 25px;">Natalia,
+							S.Si,<br>M.Si</p>
+					</div>
+					<div class="w3-modal" id="info_staff_1">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_1').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_NAT_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">NATALIA, S.SI, M.SI</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">natalia@unpar.ac.id</span></h5>
+									<h5>Status: <span style="color:limegreen">Mengajar</span></h5>
+									<h5>Bidang Keahlian: <span style="color:mediumorchid">Matematika,
+											Algoritma</span>
+									</h5>
+									<h5>Mata Kuliah yang Diajar:
+										<ul>
+											<li>
+												Algoritma dan Struktur Data
+											</li>
+											<li>
+												Matematika Diskrit
+											</li>
+											<li>
+												Statistika dengan R
+											</li>
+											<li>
+												Logika Informatika
+											</li>
+											<li>
+												Struktur Diskrit
+											</li>
+											<li>
+												Pemrograman Komputer
+											</li>
+										</ul>
+
+									</h5>
+									<h5>Pendidikan: <ul>
+											<li>S2: Matematika, <span style="color:dodgerblue">Institut Teknologi
+													Bandung</span></li>
+											<li>S1: Matematika, <span style="color:dodgerblue">Universitas Katolik
+													Parahyangan</span></li>
+										</ul>
+									</h5>
+									<h3>Informasi Lain</h3>
+									<p style="margin-bottom: 10px;">Saya lulusan matematika, tetapi mulai mengajar
+										di
+										Informatika UNPAR sejak 2015. Saya mengajar matematika dasar dan dasar
+										pemgograman untuk jurusan lain seperti matematika dan fisika.</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox" style="margin-left: 20px;"
+						onClick="document.getElementById('info_staff_2').style.display='block'">
+						<img src="../img/DosenV2_HUH_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 50px; font-weight: bold; font-size: 25px;">Husnul
+							Hakim,<br> S.Kom., M.T.</p>
+					</div>
+					<div class="w3-modal" id="info_staff_2">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_2').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_HUH_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">HUSNUL HAKIM, S.KOM., M.T.</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">husnulhakim@unpar.ac.id</span></h5>
+									<h5>Status: <span style="color:limegreen">Mengajar</span></h5>
+									<h5>Bidang Keahlian: <span style="color:mediumorchid">Aloritma dan Struktur
+											Data,
+											Fuzzy Systems</span></h5>
+									<h5>Mata Kuliah yang Diajar:
+										<ul>
+											<li>
+												Pemodelan untuk Komputasi
+											</li>
+											<li>
+												Dasar Pemrograman
+											</li>
+											<li>
+												Algoritma dan Struktur Data
+											</li>
+											<li>
+												Desain dan Analisis Algoritma
+											</li>
+											<li>
+												Interaksi Manusia-Komputer
+											</li>
+										</ul>
+
+									</h5>
+									<h5 style="margin-bottom: 25px;">Pendidikan: <ul>
+											<li>S2: Informatika, <span style="color:dodgerblue">Institut Teknologi
+													Bandung</span></li>
+											<li>S1: Teknik Informatika, <span style="color:dodgerblue">Institut
+													Teknologi Sepuluh Nopember Surabaya</span></li>
+										</ul>
+									</h5>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w3-container w3-row-padding staff">
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox"
+						onClick="document.getElementById('info_staff_3').style.display='block'">
+						<img src="../img/DosenV2_MTA_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 38px; font-weight: bold; font-size: 25px;">
+							Mariskha Tri<br> Adithia, SSi,<br> MSc, PDEng</p>
+					</div>
+					<div class="w3-modal" id="info_staff_3">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_3').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_MTA_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">MARISKHA TRI ADITHIA, SSI, MSC, PDENG</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">mariskha@unpar.ac.id</span></h5>
+									<h5>Status: <span style="color:limegreen">Mengajar</span></h5>
+									<h5>Bidang Keahlian: <span style="color:mediumorchid">Keamanan Informasi,
+											Kriptografi</span></h5>
+									<h5>Mata Kuliah yang Diajar:
+										<ul>
+											<li>
+												Matematika Diskret
+											</li>
+											<li>
+												Logika Informatika
+											</li>
+											<li>
+												Sistem Digital
+											</li>
+											<li>
+												Keamanan Informasi
+											</li>
+											<li>
+												Algoritma Kriptografi
+											</li>
+											<li>
+												Statistika Multivariat dengan R
+											</li>
+										</ul>
+									</h5>
+									<h5 style="margin-top: 35px;">Topik Bimbingan Skripsi:
+										<ul>
+											<li>Privacy Preserving Data Mining dengan k-Anonymity</li>
+											<li>Data Mining pada Data Terenkripsi</li>
+											<li>Data Mining untuk Memprediksi keberhasilan Studi</li>
+										</ul>
+									</h5>
+									<h5>Penelitian dengan Dana Ristekdikti</h5>
+									<p>Pengembangan Teknik Peringkasan, Organisasi, Seleksi dan Pengelompokan Big
+										Data dengan Format Terstruktur, Tidak Terstruktur, dan Terenkripsi,
+										Penelitian Dasar Unggulan Perguruan Tinggi, 2019-2021</p>
+									<h5>Pendidikan: <ul>
+											<li>
+												S3: Mathematic for Industry, <span style="color:dodgerblue">Technische
+													Universiteit Eindhoven, the
+													Netherlands</span>
+											</li>
+											<li>S2: Information Security Technology, <span
+													style="color:dodgerblue">Technische Universiteit Eindhoven, the
+													Netherlands</span></li>
+											<li>S1: Matematika, <span style="color:dodgerblue">Institut Teknologi
+													Bandung</span></li>
+										</ul>
+									</h5>
+									<h3>Publikasi</h3>
+									<p>Makalah-makalah publikasi dapat di akses di:
+									<ul>
+										<li> Google Scholar:<br><a style="color:dodgerblue;"
+												href="https://scholar.google.co.id/citations?user=WiozFyIAAAAJ&hl=id&oi=ao">https://scholar.google.co.id/citations?user=WiozFyIAAAAJ&hl=id&oi=ao</a>
+										</li>
+									</ul>
+									</p>
+									<p>Daftar Publikasi 5 Tahun terakhir: </p>
+									<ul>
+										<li>
+											The Visual Secret Sharing Scheme Based on The Rgb Color System, E.C.
+											Sulaiman dan M.T. Adithia, JUTI: Jurnal Ilmiah Teknologi Informasi 15
+											(1), 56-62, 2017
+										</li>
+										<li>
+											The Cpa Qualification Method Based on the Gaussian Curve Fitting, M.T.
+											Adithia, Jurnal Informatika 13 (2), 56-62, 2016
+										</li>
+									</ul>
+									<h3>Informasi Lain</h3>
+									<p style="margin-bottom: 10px;">Dalam mengajar, saya mengutamakan kesederhanaan
+										penjelasan, tanpa meninggalkan bagian konseptual dalam topik. Saya percaya
+										dengan cara ini, suatu topik yang sulit, dapat dimengerti dengan lebih
+										mudah. Didukung dengan sikap yang bersahabat, namun juga tegas, saya mampu
+										menciptakan suasana yang kondusif untuk belajar.
+
+										Saya termasuk ‘muda’ dalam dunia riset. Dimulai dengan riset sederhana yang
+										berkaitan sedikit dengan keamanan informasi pada studi S1, saya memutuskan
+										untuk melanjutkan studi di bidang tersebut. Sampai saat ini, bidang inilah
+										yang menjadi ketertarikan utama saya. Ini tercermin dalam beberapa publikasi
+										yang pernah saya hasilkan. Find out more on
+										https://scholar.google.co.id/citations?user=WiozFyIAAAAJ&hl=en&oi=ao
+
+										Di waktu luang, saya menyempatkan diri untuk membaca novel fiksi dan
+										menonton film, dengan genre favorit saya, yaitu horror, thriller, dan
+										science fiction.</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox" style="margin-left: 20px;"
+						onClick="document.getElementById('info_staff_4').style.display='block'">
+						<img src="../img/DosenV2_RCP_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 38px; font-weight: bold; font-size: 25px;">
+							Raymond<br>
+							Chandra Putra,<br> S.T., M.T.</p>
+					</div>
+					<div class="w3-modal" id="info_staff_4">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_4').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_RCP_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">RAYMOND CHANDRA PUTRA, S.T., M.T.</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">raymond.chandra@unpar.ac.id</span></h5>
+									<h5>Status: <span style="color:limegreen">Mengajar</span></h5>
+									<h5>Bidang Keahlian: <span style="color:mediumorchid">Rekayasa Perangkat Lunak,
+											Pemrograman Berbasis Web</span>
+									</h5>
+									<h5>Mata Kuliah yang Diajar:
+										<ul>
+											<li>
+												Adminisistrasi Jaringan Komputer 1-4
+											</li>
+											<li>
+												Pemrograman Berbasis Web
+											</li>
+											<li>
+												Pengujian Perangkat Lunak
+											</li>
+										</ul>
+
+									</h5>
+									<h5>Pendidikan: <ul>
+											<li>S2: Program Magister Informatika, <span
+													style="color:dodgerblue">Institut Teknologi
+													Bandung</span></li>
+											<li>S1: Teknik Informatika, <span style="color:dodgerblue">Universitas
+													Katolik
+													Parahyangan</span></li>
+										</ul>
+									</h5>
+									<h3>Informasi Lain</h3>
+									<p style="margin-bottom: 10px;">Ketertarikan terhadap dunia komputer dimulai sejak
+										SMA ketika ditugaskan untuk membuat program sederhana untuk lomba di sekolah.
+										Ketika duduk di bangku S1, saya mencoba berbagai bidang ilmu dan terkadang juga
+										mulai kehilangan arah. Fortunately, ketersesatan tersebut membuahkan predikat
+										lulusan terbaik dan juara 3 Netriders se-Indonesia. Kegiatan di luar akademis
+										selama kuliah diantaranya adalah admin lab, asistensi, kepanitiaan, mengerjakan
+										proyek, dan tentunya bermain.
+										<br>
+										Sebelum ini, saya bekerja sebagai freelance programmer dan akhirnya memutuskan
+										untuk melanjutkan studi S2 bidang software engineering.
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w3-container w3-row-padding staff">
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox"
+						onClick="document.getElementById('info_staff_5').style.display='block'">
+						<img src="../img/DosenV2_ELH_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 50px; font-weight: bold; font-size: 25px;">
+							Elisati
+							Hulu,<br> M.T.</p>
+					</div>
+					<div class="w3-modal" id="info_staff_5">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_5').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_ELH_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">ELISATI HULU, M.T.</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">elisatih@unpar.ac.id</span></h5>
+									<h5>Status: <span style="color:limegreen">Studi S3 <span style="color:dodgerblue">di
+												Program Studi Teknik Elektro dan Informatika STEI, ITB.</span></h5>
+									<h5>Bidang Keahlian: <span style="color:mediumorchid">Wireless Sensor Network,
+											Machine Learning, Computer Network</span>
+									</h5>
+									<h5>Mata Kuliah yang Diajar:
+										<ul>
+											<li>
+												Sistem Operasi
+											</li>
+											<li>
+												Jaringan Komputer
+											</li>
+											<li>
+												Administrasi Jaringan Komputer
+											</li>
+										</ul>
+
+									</h5>
+									<h5>Pendidikan: <ul>
+											<li>S2: Program Magister Informatika, <span
+													style="color:dodgerblue">Institut Teknologi
+													Bandung</span></li>
+											<li>S1: Teknik Informatika, <span style="color:dodgerblue">Institut
+													Teknologi Bandung</span></li>
+										</ul>
+									</h5>
+									<h3>Informasi Lain</h3>
+									<p style="margin-bottom: 10px;">Dosen yang sedang melakukan riset untuk deteksi
+										gempa vulkanik menggunakan machine learning pada jaringan wireless sensor.
+										Beberapa tulisan (termasuk yang sudah dipresentasikan pada seminar nasional)
+										yang berkaitan dengan riset ini dapat dilihat di
+										<a style="color:dodgerblue"
+											href="https://www.researchgate.net/profile/Elisati_Hulu2">https://www.researchgate.net/profile/Elisati_Hulu2</a>.
+										Empat (4) tahun terakhir,
+										beberapa kali diminta sebagai pembicara di beberapa sekolah dan konferensi
+										nasional guru2 Kristen, berbicara tentang dampak perkembangan teknologi
+										informasi (termasuk internet dan medsos) kepada guru, sekolah dan anak2. Tiga
+										kali dalam setahun dijadwalkan berbicara kepada para siswa SMPK Yahya, berkaitan
+										dengan perkembangan teknologi serta penggunaannya ditinjau dari biblical view.
+										Selain itu, aktif mendampingi mahasiswa UNPAR yang berasal dari Kep. Nias
+										sebagai pembina.
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox" style="margin-left: 20px;"
+						onClick="document.getElementById('info_staff_6').style.display='block'">
+						<img src="../img/DosenV2_RDL_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 20px; font-weight: bold; font-size: 25px;">Dra.
+							Rosa de
+							<br>Lima Endang <br>Padmowati,<br> M.T.
+						</p>
+					</div>
+					<div class="w3-modal" id="info_staff_6">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_6').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_RDL_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">DRA. ROSA DE LIME ENDANG PADMOWATI, M.T.</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">rosad5@unpar.ac.id</span>, <span
+											style="color:dodgerblue">padmowati@gmail.com</span></h5>
+									<h5>Status: <span style="color:limegreen">Mengajar</h5>
+									<h5>Bidang Keahlian: <span style="color:mediumorchid">Sistem Informasi, Sistem
+											Pendukung Keputusan</span>
+									</h5>
+									<h5>Komunitas Bidang Ilmu: <span style="color:dodgerblue">Sistem Informasi</span>
+									</h5>
+									<h5>Mata Kuliah yang Diajar:
+										<ul>
+											<li>
+												Pengantar Informatika
+											</li>
+											<li>
+												Pengantar Sistem Informasi
+											</li>
+											<li>
+												Sistem Pendukung Keputusan
+											</li>
+											<li>
+												Bahasa Pemrograman (Layanan)
+											</li>
+										</ul>
+
+									</h5>
+									<h5>Pendidikan: <ul>
+											<li>S2: Program Magister Informatika, <span
+													style="color:dodgerblue">Institut Teknologi
+													Bandung</span></li>
+											<li>S1: Matematika, <span style="color:dodgerblue">Institut
+													Teknologi Bandung</span></li>
+										</ul>
+									</h5>
+									<h3>Informasi Lain</h3>
+									<p style="margin-bottom: 10px;">Hasil kegiatan penelitian dipresentasikan pada
+										seminar nasional dan Konferensi Nasional Sistem Informasi, dan diterbitkan dalam
+										prosiding seminar nasional.
+										<br>
+										Hasil kegiatan pengabdian kepada masyarakat adalah terlibat dalam pembangunan
+										Sistem Informasi Manajemen Umat Keuskupan Bandung, Sistem Informasi Basis data
+										Anggota Ordo Santa Ursula Provinsi Indonesia.
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w3-container w3-row-padding staff">
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox"
+						onClick="document.getElementById('info_staff_7').style.display='block'">
+						<img src="../img/DosenV2_PAS_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 20px; font-weight: bold; font-size: 25px;">
+							Pascal A.<br>
+							Nugroho,<br> S.Kom.,<br> M.Comp.</p>
+					</div>
+					<div class="w3-modal" id="info_staff_7">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_7').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_PAS_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">PASCAL ALFADIAN NUGROHO, S.KOM., M.COMP.</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">pascal@unpar.ac.id</span>, <span
+											style="color:dodgerblue">padmowati@gmail.com</span></h5>
+									<h5>Status: <span style="color:limegreen">Mengajar</h5>
+									<h5>Bidang Keahlian: <span style="color:mediumorchid">Keamanan Informasi, Sistem
+											Terdistribusi, Rekayasa Perangkat Lunak</span>
+									</h5>
+									<h5>Mata Kuliah yang Diajar:
+										<ul>
+											<li>
+												Analisa dan Desain Perangkat Lunak
+											</li>
+											<li>
+												Proyek Informatika
+											</li>
+											<li>
+												Pemrograman Berbasis Web Lanjut
+											</li>
+											<li>
+												Keamanan Informasi
+											</li>
+											<li>
+												Layanan Berbasis Web
+											</li>
+										</ul>
+
+									</h5>
+									<h5 style="margin-top: 35px;">Penelitian dengan dana LPPM UNPAR: <ul>
+											<li>
+												IF Student Portal: Portal Akademik Mahasiswa untuk Program Studi Teknik
+												Informatika, Hibah Dosen Muda, 2016.
+											</li>
+										</ul>
+									</h5>
+									<h5>Penelitian dengan dana mandiri: <ul>
+											<li>
+												Pengembangan Aplikasi KIRI Menjadi Proyek Open Source, Penelitian Dana
+												Mandiri, 2017.
+											</li>
+										</ul>
+									</h5>
+									<h5>Topik Bimbingan Skripsi: <ul>
+											<li>
+												Perangkat Lunak Konversi Komentar Java ke LaTeX</li>
+											<li>
+												Pemanfaatan Smartphone Sebagai Pengendali Permainan Berbasis Web
+											</li>
+											<li>
+												Kustomisasi Sharif Judge untuk Kebutuhan Program Studi Teknik
+												Informatika
+											</li>
+											<li>
+												Aplikasi Pratinjau 3 Dimensi Berbasis Web
+											</li>
+											<li>
+												Aplikasi Perekam Jadwal Dosen
+											</li>
+											<li>
+												Sistem Penilaian Sidang Skripsi dengan AngularJS
+											</li>
+											<li>
+												Analisis Waktu Tempuh Kota Bandung
+											</li>
+											<li>
+												Perangkat Lunak Login Otomatis Untuk Captive Portal WiFi
+											</li>
+											<li>
+												Algoritma Deteksi Gerakan Kepala dengan Google Cardboard
+											</li>
+										</ul>
+									</h5>
+									<h5>Pendidikan: <ul>
+										<li>S2: Program Magister Informatika, <span
+												style="color:dodgerblue">Institut Teknologi
+												Bandung</span></li>
+										<li>S1: Matematika, <span style="color:dodgerblue">Institut
+												Teknologi Bandung</span></li>
+									</ul>
+								</h5>
+									<h3>Publikasi</h3>
+									<p>Makalah-makalah publikasi dapat diakses di:
+									<ul>
+										<li>Google Scholar:<br>
+											<a style="color:dodgerblue"
+												href="https://scholar.google.co.id/citations?hl=en&user=MCXP8c8AAAAJ">https://scholar.google.co.id/citations?hl=en&user=MCXP8c8AAAAJ</a>
+										</li>
+										<li>Research Gate:<br>
+											<a style="color:dodgerblue"
+												href="https://www.researchgate.net/profile/Pascal_Nugroho/research">https://www.researchgate.net/profile/Pascal_Nugroho/research</a>
+										</li>
+									</ul>
+									</p>
+									<p>Data Publikasi 5 tahun terakhir:
+									<ul>
+										<li>Open Sourcing Proprietary Application Case Study: KIRI Website</li>
+										<li>Integrasi Situs Navigasi dengan Situs Crowdsourcing Rute Angkot</li>
+									</ul>
+									</p>
+									<h3>Informasi Lain</h3>
+									<p style="margin-bottom: 10px;">Dosen yang lebih mengutamakan praktik. Tertarik
+										dengan teknologi-teknologi terbaru, terutama yang dekat dengan kehidupan
+										generasi Z (media sosial, perangkat bergerak, dll). Selain kegiatan tridharma,
+										juga bertanggung jawab mengelola situs web program studi.
+										<br>
+										Di luar kampus, mengelola situs web KIRI (<a style="color:dodgerblue"
+											href="https://projectkiri.id">https://projectkiri.id</a>), sebuah situs
+										web untuk menemukan rute angkutan umum. Juga aktif sebagai konsultan di firma
+										desain DNArtworks (<a style="color:dodgerblue"
+											href="https://www.dnartworks.co.id/">https://www.dnartworks.co.id/</a>).
+									</p>
+									<h3>OpenPGP Public Key</h3>
+									<p>Di bawah ini adalah kunci publik saya, untuk memverifikasi integritas pesan dari
+										saya, atau mengirimkan pesan terenkripsi untuk saya; jika dibutuhkan. Kunci yang
+										sama bisa juga didapatkan dari
+										<a style="color:dodgerblue"
+											href="https://keys.openpgp.org/search?q=pascal%40unpar.ac.id">https://keys.openpgp.org/search?q=pascal%40unpar.ac.id</a>.
+									</p>
+									<blockquote>-----BEGIN PGP PUBLIC KEY BLOCK-----
+										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
+										=UwVq
+										-----END PGP PUBLIC KEY BLOCK-----</blockquote>
+
+									<p>Note: import ke gnupg dengan cara …</p>
+									<blockquote>gpg --import<br>
+										… kemudian paste armored public key di atas.</blockquote>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="w3-container w3-button w3-border w3-col s6 staffBox" style="margin-left: 20px;"
+						onClick="document.getElementById('info_staff_8').style.display='block'">
+						<img src="../img/DosenV2_KDH_300x300.jpg"
+							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
+						<p style="text-align: left; margin-top: 38px; font-weight: bold; font-size: 25px;">
+							Kristopher
+							<br>David Harjono,<br> M.T.
+						</p>
+					</div>
+					<div class="w3-modal" id="info_staff_8">
+						<div class="w3-modal-content">
+							<div class="w3-container">
+								<span onClick="document.getElementById('info_staff_8').style.display='none'"
+									class="w3-button w3-display-topright">&times;</span>
+								<img src="../img/DosenV2_KDH_300x300.jpg"
+									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
+								<div style="margin-left: 15px; margin-top: 20px;">
+									<h1 style="font-weight: bold;">KRISTOPHER DAVID HARJONO, M.T.</h1>
+									<h5>E-Mail: <span style="color:dodgerblue">kristopher.h@unpar.ac.id</span>
+										<h5>Status: <span style="color:limegreen">Mengajar</h5>
+										<h5>Bidang Keahlian: <span style="color:mediumorchid">Temu Kembali Informasi,
+												Pemrograman Aplikasi pada Perangkat Bergerak</span>
+										</h5>
+										<h5>Mata Kuliah yang Diajar:
+											<ul>
+												<li>
+													Algoritma dan Struktur Data
+												</li>
+												<li>
+													Manajemen Informasi dan Basis Data
+												</li>
+												<li>
+													Pemrograman Basis Data
+												</li>
+												<li>
+													Basis Data dan Pemrograman SQL untuk Big Data
+												</li>
+												<li>
+													Pemrograman Berorientasi Objek
+												</li>
+												<li>
+													Topik Khusus 1 (Temu Kembali Informasi)
+												</li>
+											</ul>
+
+										</h5>
+										<h5>Pendidikan: <ul>
+												<li>S2: Teknik Informatika, <span style="color:dodgerblue">Universitas
+														Bina Nusantara</span></li>
+												<li>S1: Ilmu Komputer, <span style="color:dodgerblue">Universitas
+														Katolik Parahyangan</span></li>
+											</ul>
+										</h5>
+										<h3>Informasi Lain</h3>
+										<p style="margin-bottom: 10px;">Pengalaman saya bekerja di beberapa perusahaan
+											di Indonesia dan di luar negeri mengajarkan saya bahwa salah satu kemampuan
+											yang paling penting di bidang ini adalah kemampuan untuk belajar secara
+											mandiri. Menurut pendapat saya, untuk dapat belajar secara mandiri
+											dibutuhkan keinginan untuk belajar dan sumber daya untuk digunakan dalam
+											proses belajar. Selain referensi-referensi yang dapat diperoleh dari buku
+											atau dari internet, salah satu sumber daya lain yang menurut saya penting
+											adalah rekan untuk berdiskusi. Oleh karena itu saya berusaha membuat suasana
+											belajar dalam kelas di mana mahasiswa nyaman untuk bertanya. Selain itu saya
+											juga menyediakan banyak waktu di luar kelas yang dapat digunakan mahasiswa
+											untuk bertanya dalam suasana yang informal.
+											<br>
+											Sebagian besar topik penelitian saya adalah mengenai cara memanfaatkan
+											informatika untuk meningkatkan kenyamanan kehidupan sehari-hari kita secara
+											seamless. Oleh karena itu bidang penelitian saya cenderung tersebar di
+											beberapa bidang informatika yang biasanya relatif terpisah.
+											<br>
+											Salah satu contoh topik yang sering saya gunakan untuk mengilustrasikan
+											problem-problem jenis ini di kelas adalah papan pengumuman digital yang
+											hanya menampilkan informasi yang relevan bagi orang-orang yang sedang ada di
+											sekitarnya, tanpa membutuhkan interaksi apapun dari orang-orang tersebut.
+											Contoh masalah tersebut dapat diselesaikan dengan menggabungkan ide-ide yang
+											ada pada bidang Temu Kembali Informasi, Pemrograman pada Perangkat Bergerak,
+											dan bidang-bidang lain.
+										</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -69,4 +766,5 @@
 		</div>
 	</div>
 </body>
+
 </html>

@@ -24,3 +24,36 @@ body, p {
 .content-head {
     margin-top: 7%;
 }
+
+.staffHeader{
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #cc33ff 35%, #00ccff);
+    padding: 20px;
+    width: 500px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#staffText{
+    font-size: 25px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.staff{
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+.staffBox{
+    border-radius: 35px;
+    max-width: 400px;
+}
+
+ul{
+    display: table;
+}
