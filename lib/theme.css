@@ -1,5 +1,6 @@
 /* Backgorund Themes */
 .background-theme { background-color: #F2F4F4 !important }
+.accent-theme { background-image: linear-gradient(to right, #0B5A1B, #17B437) !important; color: #FFFFFF !important}
 .background-gradiant-theme { background-image: linear-gradient(to right, #C213FF, #4EFFD4)!important }
 .background-black-theme { background-color: #47443A !important}
 
@@ -11,5 +12,12 @@
 
 /* Bar Themes */
 .bar-item:hover { color: #FFFFFF !important; background-color: #47443A !important; text-decoration: none !important}
-.bar-item-active { color: #FFFFFF !important; background: linear-gradient(to right, #FF6961, #FF9d98)!important}
+.bar-item-active { color: #FFFFFF !important; background-image: linear-gradient(to right, #0B5A1B, #17B437) !important}
 .bar-item-active:hover { color: #FFFFFF !important; background: #47443A !important}
+
+/* Card Themes */
+.top-card-round { border-top-left-radius: 8px !important; border-top-right-radius: 8px !important}
+
+/* Button Themes */
+.button-green { color: #FFFFFF !important; background-image: linear-gradient(to right, #0B5A1B, #17B437) !important }
+.button-green:hover { color: #FFFFFF !important; background: #47443A !important; text-decoration: none !important }
