@@ -17,7 +17,9 @@
 
 /* Card Themes */
 .top-card-round { border-top-left-radius: 8px !important; border-top-right-radius: 8px !important}
+.topright-card-round { border-top-right-radius: 8px !important}
 
 /* Button Themes */
 .button-green { color: #FFFFFF !important; background-image: linear-gradient(to right, #0B5A1B, #17B437) !important }
 .button-green:hover { color: #FFFFFF !important; background: #47443A !important; text-decoration: none !important }
+.x-icon:hover { background: none !important; color: #FFFFFF !important }
