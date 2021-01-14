@@ -54,3 +54,19 @@ body, p {
 ul{
     display: table;
 }
+
+table{
+    max-width: 700px;
+}
+
+.nomor{
+    max-width: 40px;
+}
+
+.kegiatan{
+    max-width: 320px;
+}
+
+.waktu{
+    max-width: 320px;
+}

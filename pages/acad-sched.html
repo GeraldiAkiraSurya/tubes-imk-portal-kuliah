@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Academic Schedule</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
+		id="bootstrap-css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="script/script.js"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="../lib/font-awesome.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../lib/theme.css">
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../lib/theme.css">
 </head>
+
 <body>
 	<!-- HEADER -->
 	<div class="w3-container background-theme w3-top drop-shadow-theme">
@@ -23,15 +26,15 @@
 		</div>
 		<div style="width: 59%;" class="w3-container w3-cell w3-cell-middle w3-bar w3-light-grey">
 			<a href="../index.html" class="w3-bar-item w3-button bar-item">Home</a>
-			<a href="classes.html" class="w3-bar-item w3-button bar-item bar-item-active">Classes</a>
+			<a href="classes.html" class="w3-bar-item w3-button bar-item">Classes</a>
 			<a href="announcements.html" class="w3-bar-item w3-button bar-item">Anouncements</a>
 			<div class="w3-dropdown-hover">
-			  <button class="w3-button bar-item">Informations</button>
-			  <div class="w3-dropdown-content w3-bar-block w3-card-4">
-				<a href="acad-sched.html" class="w3-bar-item w3-button bar-item">Academic Schedule</a>
-				<a href="dept-inf.html" class="w3-bar-item w3-button bar-item">Department Informations</a>
-				<a href="staffs-gallery.html" class="w3-bar-item w3-button bar-item">Staffs Gallery</a>
-			  </div>
+				<button class="w3-button bar-item bar-item-active">Informations</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="acad-sched.html" class="w3-bar-item w3-button bar-item bar-item-active">Academic Schedule</a>
+					<a href="dept-inf.html" class="w3-bar-item w3-button bar-item">Department Informations</a>
+					<a href="staffs-gallery.html" class="w3-bar-item w3-button bar-item">Staffs Gallery</a>
+				</div>
 			</div>
 		</div>
 		<div class="w3-container w3-cell w3-cell-middle w3-bar">
@@ -46,8 +49,392 @@
 
 	<!-- CONTENT -->
 	<div class="w3-container background-theme content-head">
-		<div>
-			<p>CONTENT HERE</p>
+		<div class="w3-right w3-dropdown-hover" style="margin-right: 25px; margin-top: 25px;">
+			<button id="btn_hover" class="w3-button w3-black">2020/2021</button>
+			<div id="sched_dropdown" class="w3-dropdown-content w3-bar-block w3-border">
+				<div id="sched_1" class="w3-bar-item w3-button w3-hide " onclick="changeCal(this.id)">
+					2020/2021
+				</div>
+				<div id="sched_2" class="w3-bar-item w3-button w3-hide w3-show" onClick="changeCal(this.id)">
+					SP 2019/2020
+				</div>
+				<div id="sched_3" class="w3-bar-item w3-button w3-hide w3-show" onClick="changeCal(this.id)">
+					SP 2020/2021
+				</div>
+			</div>
+		</div>
+		<div class="cal" style="margin: 100px 0 75px 32%;">
+			<div id="cal_1" class="w3-responsive w3-hide w3-show">
+				<table class="w3-table-all">
+					<thead>
+						<tr class="w3-light-grey">
+						</tr>
+					</thead>
+					<tr>
+						<th></th>
+						<th style="text-align:center">SEMESTER GANJIL</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th class="nomor">No.</th>
+						<th class="kegiatan">Kegiatan</th>
+						<th id="waktu">Waktu</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">1</th>
+						<th class="kegiatan">Periode Pembayaran Biaya Kuliah Tahap I (UKPS)</th>
+						<th id="waktu">Jumat-Rabu, 17-29 Juli 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">2</th>
+						<th class="kegiatan">Masa Pengisian Formulir Rencana Studi (FRS) Mahasiswa Lama</th>
+						<th id="waktu">Selasa – Kamis, 4-6 Agustus 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">3</th>
+						<th class="kegiatan">Upacara Peringatan HUT Kemerdekaan RI ke 75</th>
+						<th id="waktu">Senin, 17 Agustus 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">4</th>
+						<th class="kegiatan">Pendaftaran Ulang Mahasiswa Baru</th>
+						<th id="waktu">Senin, 7 September 2020 (batas akhir)</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">5</th>
+						<th class="kegiatan">Pekan Inisiasi dan Adaptasi</th>
+						<th id="waktu">Rabu-Jumat, 9-11 September 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">6</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Sementara Mahasiswa Lama</th>
+						<th id="waktu">Kamis, 10 September 2020 (13.00)</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">7</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Sementara Mahasiswa Baru</th>
+						<th id="waktu">Jumat, 11 September 2020 (13.00)</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">8</th>
+						<th class="kegiatan">Masa Akhir dan Batas Yudisium Semester Genap Tahun Akademik 2019/2020</th>
+						<th id="waktu">Sabtu, 12 September 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">9</th>
+						<th class="kegiatan">Awal Perkuliahan / Awal Semester Ganjil 2020/2021</th>
+						<th id="waktu">Senin, 14 September 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">10</th>
+						<th class="kegiatan">Masa Perubahan Rencana Studi (PRS)</th>
+						<th id="waktu">Selasa-Rabu, 29-30 September 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">11</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Tetap</th>
+						<th id="waktu">Jumat, 2 Oktober 2020 (13.00)</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">12</th>
+						<th class="kegiatan">Periode Pembayaran Biaya Kuliah Tahap II (pelunasan biaya SKS)</th>
+						<th id="waktu">Selasa-Jumat, 6-23 Oktober 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">13</th>
+						<th class="kegiatan">Batas Akhir Pendaftaran Wisuda II 2019/2020</th>
+						<th id="waktu">Sabtu, 17 Oktober 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">14</th>
+						<th class="kegiatan">Ujian Tengah Semeste</th>
+						<th id="waktu">Senin – Jumat, 9-20 November 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">15</th>
+						<th class="kegiatan">Upacara Wisuda II 2019/2020</th>
+						<th id="waktu">Jumat- Sabtu, 27-28 November 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">16</th>
+						<th class="kegiatan">Batas Akhir Penyerahan Nilai UTS</th>
+						<th id="waktu">Jumat 4 Desember 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">17</th>
+						<th class="kegiatan">Dies Natalis UNPAR ke 66</th>
+						<th id="waktu">Minggu, 17 Januari 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">18</th>
+						<th class="kegiatan">Pekan Budaya</th>
+						<th id="waktu">Senin – Jumat, 18-22 Januari 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">19</th>
+						<th class="kegiatan">Akhir Perkuliahan (14 minggu)</th>
+						<th id="waktu">Jumat, 22 Januari 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">20</th>
+						<th class="kegiatan">Ujian Akhir Semester</th>
+						<th id="waktu">Senin 25 Januari 2021 – Jumat, 5 Februari 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">21</th>
+						<th class="kegiatan">Batas Unggah Nilai Akhir Semester Ganjil 2020/2021</th>
+						<th id="waktu">2 minggu setelah pelaksanaan ujian mata kuliah</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">22</th>
+						<th class="kegiatan">Pengumuman Nilai Akhir Semester Ganjil 2020/2021</th>
+						<th id="waktu">Selasa, 23 Februari 2021</th>
+					</tr>
+					<tr>
+						<th></th>
+						<th style="text-align:center">SEMESTER GENAP</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">23</th>
+						<th class="kegiatan">Periode Pembayaran Biaya Kuliah Tahap I (UKPS)</th>
+						<th id="waktu">Selasa-Selasa, 9-23 Februari 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">24</th>
+						<th class="kegiatan">Masa Formulir Rencana Studi (FRS) Mahasiswa</th>
+						<th id="waktu">Rabu-Jumat, 24-26 Februari 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">25</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Sementara (13.00 WIB)</th>
+						<th id="waktu">Jumat, 5 Maret 2021 (13.00 WlB)</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">26</th>
+						<th class="kegiatan">Masa Akhir dan Batas Yudisium Semester Ganjil Tahun Akademik 2020/2021</th>
+						<th id="waktu">Jumat, 5 Maret 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">27</th>
+						<th class="kegiatan">Batas Akhir Pendaftaran Wisuda I 2020/2021</th>
+						<th id="waktu">Jumat, 5 Maret 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">28</th>
+						<th class="kegiatan">Awal Perkuliahan / Awal Semester Genap 2020/2021</th>
+						<th id="waktu">Senin, 8 Maret 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">29</th>
+						<th class="kegiatan">Masa Perubahan Rencana Studi (PRS)</th>
+						<th id="waktu">Rabu- Kamis, 24-25 Maret 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">30</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Tetap</th>
+						<th id="waktu">Jumat, 26 Maret 2021 (13.00)</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">31</th>
+						<th class="kegiatan">Periode Pembayaran Biaya Kuliah Tahap II
+							(pelunasan biaya SKS)</th>
+						<th id="waktu">Selasa-Selasa, 6-20 April 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">32</th>
+						<th class="kegiatan">Upacara Wisuda I 2020/2021</th>
+						<th id="waktu">Kamis & Sabtu, 15 & 17 April 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">33</th>
+						<th class="kegiatan">Ujian Tengah Semester</th>
+						<th id="waktu">Senin-Jumat, 26 April-7 Mei 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">34</th>
+						<th class="kegiatan">Batas Akhir Penyerahan Nilai UTS</th>
+						<th id="waktu">Jumat, 28 Mei 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">35</th>
+						<th class="kegiatan">Akhir Perkuliahan (14 minggu)</th>
+						<th id="waktu">Sabtu, 3 Juli 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">36</th>
+						<th class="kegiatan">Ujian Akhir Semester</th>
+						<th id="waktu">Senin-Jumat, 5-16 Juli 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">37</th>
+						<th class="kegiatan">Batas Unggah Nilai Akhir Semester Genap 2020/2021</th>
+						<th id="waktu">2 minggu setelah pelaksanaan ujian mata kuliah</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">38</th>
+						<th class="kegiatan">Pengumuman Nilai Akhir Semester Genap 2020/2021</th>
+						<th id="waktu">Rabu, 4 Agustus 2021</th>
+					</tr>
+				</table>
+			</div>
+			<div id="cal_2" class="w3-hide">
+				<table class="w3-table-all">
+					<thead>
+						<tr class="w3-light-grey">
+						</tr>
+					</thead>
+					<tr>
+						<th></th>
+						<th style="text-align:center">SEMESTER PENDEK 2019/2020</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th class="nomor">No.</th>
+						<th class="kegiatan">Kegiatan</th>
+						<th id="waktu">Waktu</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">1</th>
+						<th class="kegiatan">Pendaftaran FRS</th>
+						<th id="waktu">Selasa – Jumat, 5 – 8 Mei 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">2</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Sementara</th>
+						<th id="waktu">Rabu, 20 Mei 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">3</th>
+						<th class="kegiatan">Awal Perkuliahan</th>
+						<th id="waktu">Rabu, 17 Juni 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">4</th>
+						<th class="kegiatan">Perubahan Rencana Studi</th>
+						<th id="waktu">Rabu, 24 Juni 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">5</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Tetap</th>
+						<th id="waktu">Kamis, 25 Juni 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">6</th>
+						<th class="kegiatan">Periode Pembayaran Biaya Studi</th>
+						<th id="waktu">Kamis-Rabu, 25 Juni-1 Juli 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">7</th>
+						<th class="kegiatan">Ujian Tengah Semester Fakultas</th>
+						<th id="waktu">Senin-Selasa,
+							6-7 Juli 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">8</th>
+						<th class="kegiatan">Ujian Tengah Semester MKU</th>
+						<th id="waktu">Rabu, 8 Juli 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">9</th>
+						<th class="kegiatan"> Akhir Perkuliahan</th>
+						<th id="waktu">Kamis, 30 Juli 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">10</th>
+						<th class="kegiatan">Ujian Akhir Semester Fakultas</th>
+						<th id="waktu">Senin-Selasa, 3-4 Agustus 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">11</th>
+						<th class="kegiatan">Ujian Akhir Semester MKU</th>
+						<th id="waktu">Rabu, 5 Agustus 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">12</th>
+						<th class="kegiatan">Batas Unggah Nilai</th>
+						<th id="waktu">Jumat, 14 Agustus 2020</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">13</th>
+						<th class="kegiatan">Pengumuman Nilai</th>
+						<th id="waktu">Jumat, 21 Agustus 2020</th>
+					</tr>
+				</table>
+			</div>
+			<div id="cal_3" class="w3-hide">
+				<table class="w3-table-all">
+					<thead>
+						<tr class="w3-light-grey">
+						</tr>
+					</thead>
+					<tr>
+						<th></th>
+						<th style="text-align:center">SEMESTER PENDEK 2020/2021</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th class="nomor">No.</th>
+						<th class="kegiatan">Kegiatan</th>
+						<th id="waktu">Waktu</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">1</th>
+						<th class="kegiatan">Masa Formulir Rencana Studi (FRS) Mahasiswa</th>
+						<th id="waktu">Kamis-Jumat, 10-11 Juni 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">2</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Sementara</th>
+						<th id="waktu">Jumat, 2 Juli 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">3</th>
+						<th class="kegiatan">Awal Perkuliahan</th>
+						<th id="waktu">Senin, 19 Juli 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">4</th>
+						<th class="kegiatan">Masa Perubahan Rencana Studi (PRS) Mahasiswa</th>
+						<th id="waktu">Kamis, 29 Juli 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">5</th>
+						<th class="kegiatan">Pengumuman Kelas Paralel Tetap</th>
+						<th id="waktu">Jumat, 30 Juli 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">6</th>
+						<th class="kegiatan">Periode Pembayaran Biaya Studi</th>
+						<th id="waktu">Selasa-Senin, 3-9 Agustus 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">7</th>
+						<th class="kegiatan">Ujian Tengah Semester</th>
+						<th id="waktu">Rabu-Jumat, 11-13 Agustus 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">8</th>
+						<th class="kegiatan">Akhir Perkuliahan</th>
+						<th id="waktu">Selasa, 7 September 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">9</th>
+						<th class="kegiatan">Uiian Akhir Semester</th>
+						<th id="waktu">Rabu-Jumat, 8-10 September 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">10</th>
+						<th class="kegiatan">Batas Unggah Nilai Akhir</th>
+						<th id="waktu">Rabu, 22 September 2021</th>
+					</tr>
+					<tr>
+						<th class="nomor w3-center">11</th>
+						<th class="kegiatan">Pengumuman Nilai Akhir</th>
+						<th id="waktu">Jumat, 24 September 2021</th>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</div>
 
@@ -69,4 +456,51 @@
 		</div>
 	</div>
 </body>
+<script>
+	function changeCal(id) {
+		if (document.getElementById(id).className.indexOf("w3-show") != -1) {
+			if (id == "sched_1") {
+				if (document.getElementById("cal_1").className.indexOf("w3-show") == -1) {
+					document.getElementById("cal_1").className += " w3-show";
+					document.getElementById("cal_2").className = document.getElementById("cal_2").className.replace(" w3-show", "");
+					document.getElementById("cal_3").className = document.getElementById("cal_3").className.replace(" w3-show", "");
+				}
+				if (document.getElementById("sched_2").className.indexOf("w3-show") == -1) {
+					document.getElementById("sched_2").className += " w3-show";
+				} else if (document.getElementById("sched_3").className.indexOf("w3-show") == -1) {
+					document.getElementById("sched_3").className += " w3-show";
+				}
+				document.getElementById("sched_1").className = document.getElementById("sched_1").className.replace(" w3-show", "");
+			}
+			else if (id == "sched_2") {
+				if (document.getElementById("cal_2").className.indexOf("w3-show") == -1) {
+					document.getElementById("cal_2").className += " w3-show";
+					document.getElementById("cal_1").className = document.getElementById("cal_1").className.replace(" w3-show", "");
+					document.getElementById("cal_3").className = document.getElementById("cal_3").className.replace(" w3-show", "");
+				}
+				if (document.getElementById("sched_1").className.indexOf("w3-show") == -1) {
+					document.getElementById("sched_1").className += " w3-show";
+				} else if (document.getElementById("sched_3").className.indexOf("w3-show") == -1) {
+					document.getElementById("sched_3").className += " w3-show";
+				}
+				document.getElementById("sched_2").className = document.getElementById("sched_2").className.replace(" w3-show", "");
+			}
+			else if (id == "sched_3") {
+				if (document.getElementById("cal_3").className.indexOf("w3-show") == -1) {
+					document.getElementById("cal_3").className += " w3-show";
+					document.getElementById("cal_1").className = document.getElementById("cal_1").className.replace(" w3-show", "");
+					document.getElementById("cal_2").className = document.getElementById("cal_2").className.replace(" w3-show", "");
+				}
+				if (document.getElementById("sched_1").className.indexOf("w3-show") == -1) {
+					document.getElementById("sched_1").className += " w3-show";
+				} else if (document.getElementById("sched_2").className.indexOf("w3-show") == -1) {
+					document.getElementById("sched_2").className += " w3-show";
+				}
+				document.getElementById("sched_3").className = document.getElementById("sched_3").className.replace(" w3-show", "");
+			}
+			document.getElementById("btn_hover").innerHTML = document.getElementById(id).innerHTML;
+		}
+	}
+</script>
+
 </html>
