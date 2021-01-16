@@ -4,45 +4,43 @@
 <head>
 	<title>Staffs Gallery</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
-		id="bootstrap-css">
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="script/script.js"></script>
+	<script src="../script/script.js"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="../lib/font-awesome.css">
-	<link rel="stylesheet" href="../style/style.css">
-	<link rel="stylesheet" href="../lib/theme.css">
+	<link rel="stylesheet" href="../../lib/font-awesome.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../lib/theme.css">
 </head>
-
 <body>
 	<!-- HEADER -->
 	<div class="w3-container background-theme w3-top drop-shadow-theme">
 		<div style="width: 9%;" class="w3-container w3-cell w3-cell-middle w3-center">
-			<img style="width: 100%;" id="logo" src="../img/logo.png">
+			<img style="width: 100%;" id="logo" src="../../img/logo.png">
 		</div>
 		<div style="width: 20%;" class="w3-container w3-cell w3-cell-middle">
 			<h1 id="portal-title">e-College</h1>
 		</div>
-		<div style="width: 59%;" class="w3-container w3-cell w3-cell-middle w3-bar background-theme">
-			<a href="../index.html" class="w3-bar-item w3-button bar-item bar-item-active">Home</a>
-			<a href="login.html" class="w3-bar-item w3-button bar-item">Classes</a>
-			<a href="login.html" class="w3-bar-item w3-button bar-item">Anouncements</a>
+		<div style="width: 59%;" class="w3-container w3-cell w3-cell-middle w3-bar w3-light-grey">
+			<a href="index-logged-in.html" class="w3-bar-item w3-button bar-item">Home</a>
+			<a href="../classes.html" class="w3-bar-item w3-button bar-item">Classes</a>
+			<a href="../announcements.html" class="w3-bar-item w3-button bar-item">Anouncements</a>
 			<div class="w3-dropdown-hover">
-			  <button class="w3-button bar-item">Informations</button>
-			  <div class="w3-dropdown-content w3-bar-block w3-card-4">
-				<a href="acad-sched.html" class="w3-bar-item w3-button bar-item">Academic Schedule</a>
-				<a href="dept-inf.html" class="w3-bar-item w3-button bar-item">Department Informations</a>
-				<a href="staffs-gallery.html" class="w3-bar-item w3-button bar-item">Staffs Gallery</a>
-			  </div>
+				<button class="w3-button bar-item bar-item-active">Informations</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="acad-sched-logged-in.html" class="w3-bar-item w3-button bar-item">Academic Schedule</a>
+					<a href="dept-inf-logged-in.html" class="w3-bar-item w3-button bar-item">Department Informations</a>
+					<a href="staffs-gallery-logged-in.html" class="w3-bar-item w3-button bar-item bar-item-active">Staffs Gallery</a>
+				</div>
 			</div>
 		</div>
 		<div class="w3-container w3-cell w3-cell-middle w3-bar">
-			<a href="login.html" class="w3-button w3-bar-item bar-item">
+			<a href="../enrollment.html" class="w3-button w3-bar-item bar-item">
 				<i class="fa fa-plus"></i>
 			</a>
-			<a href="login.html" class="w3-button w3-bar-item bar-item">
-				Login
+			<a href="#" class="w3-button w3-bar-item bar-item">
+				<i class="fa fa-user"></i>
 			</a>
 		</div>
 	</div>
@@ -60,7 +58,7 @@
 				<div class="w3-container w3-row-padding staff">
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox"
 						onClick="document.getElementById('info_staff_1').style.display='block'">
-						<img src="../img/DosenV2_NAT_300x300.jpg"
+						<img src="../../img/DosenV2_NAT_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 50px; font-weight: bold; font-size: 25px;">Natalia,
 							S.Si,<br>M.Si</p>
@@ -70,7 +68,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_1').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_NAT_300x300.jpg"
+								<img src="../../img/DosenV2_NAT_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">NATALIA, S.SI, M.SI</h1>
@@ -120,7 +118,7 @@
 					</div>
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox" style="margin-left: 3%;"
 						onClick="document.getElementById('info_staff_2').style.display='block'">
-						<img src="../img/DosenV2_HUH_300x300.jpg"
+						<img src="../../img/DosenV2_HUH_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 50px; font-weight: bold; font-size: 25px;">Husnul
 							Hakim,<br> S.Kom., M.T.</p>
@@ -130,7 +128,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_2').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_HUH_300x300.jpg"
+								<img src="../../img/DosenV2_HUH_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">HUSNUL HAKIM, S.KOM., M.T.</h1>
@@ -176,7 +174,7 @@
 				<div class="w3-container w3-row-padding staff">
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox"
 						onClick="document.getElementById('info_staff_3').style.display='block'">
-						<img src="../img/DosenV2_MTA_300x300.jpg"
+						<img src="../../img/DosenV2_MTA_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 38px; font-weight: bold; font-size: 25px;">
 							Mariskha Tri<br> Adithia, SSi,<br> MSc, PDEng</p>
@@ -186,7 +184,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_3').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_MTA_300x300.jpg"
+								<img src="../../img/DosenV2_MTA_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">MARISKHA TRI ADITHIA, SSI, MSC, PDENG</h1>
@@ -284,7 +282,7 @@
 					</div>
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox" style="margin-left: 3%;"
 						onClick="document.getElementById('info_staff_4').style.display='block'">
-						<img src="../img/DosenV2_RCP_300x300.jpg"
+						<img src="../../img/DosenV2_RCP_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 38px; font-weight: bold; font-size: 25px;">
 							Raymond<br>
@@ -295,7 +293,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_4').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_RCP_300x300.jpg"
+								<img src="../../img/DosenV2_RCP_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">RAYMOND CHANDRA PUTRA, S.T., M.T.</h1>
@@ -349,7 +347,7 @@
 				<div class="w3-container w3-row-padding staff">
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox"
 						onClick="document.getElementById('info_staff_5').style.display='block'">
-						<img src="../img/DosenV2_ELH_300x300.jpg"
+						<img src="../../img/DosenV2_ELH_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 50px; font-weight: bold; font-size: 25px;">
 							Elisati
@@ -360,7 +358,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_5').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_ELH_300x300.jpg"
+								<img src="../../img/DosenV2_ELH_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">ELISATI HULU, M.T.</h1>
@@ -415,7 +413,7 @@
 					</div>
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox" style="margin-left: 3%;"
 						onClick="document.getElementById('info_staff_6').style.display='block'">
-						<img src="../img/DosenV2_RDL_300x300.jpg"
+						<img src="../../img/DosenV2_RDL_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 20px; font-weight: bold; font-size: 25px;">Dra.
 							Rosa de
@@ -427,7 +425,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_6').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_RDL_300x300.jpg"
+								<img src="../../img/DosenV2_RDL_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">DRA. ROSA DE LIME ENDANG PADMOWATI, M.T.</h1>
@@ -483,7 +481,7 @@
 				<div class="w3-container w3-row-padding staff">
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox"
 						onClick="document.getElementById('info_staff_7').style.display='block'">
-						<img src="../img/DosenV2_PAS_300x300.jpg"
+						<img src="../../img/DosenV2_PAS_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 20px; font-weight: bold; font-size: 25px;">
 							Pascal A.<br>
@@ -494,7 +492,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_7').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_PAS_300x300.jpg"
+								<img src="../../img/DosenV2_PAS_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">PASCAL ALFADIAN NUGROHO, S.KOM., M.COMP.</h1>
@@ -665,7 +663,7 @@
 					</div>
 					<div class="w3-button w3-border w3-col s6 w3-card-2 staffBox" style="margin-left: 3%;"
 						onClick="document.getElementById('info_staff_8').style.display='block'">
-						<img src="../img/DosenV2_KDH_300x300.jpg"
+						<img src="../../img/DosenV2_KDH_300x300.jpg"
 							style="border-radius: 20px; float: left; width: 150px; margin: 20px 30px 20px 20px;" />
 						<p style="text-align: left; margin-top: 38px; font-weight: bold; font-size: 25px;">
 							Kristopher
@@ -677,7 +675,7 @@
 							<div class="w3-container">
 								<span onClick="document.getElementById('info_staff_8').style.display='none'"
 									class="w3-button w3-display-topright">&times;</span>
-								<img src="../img/DosenV2_KDH_300x300.jpg"
+								<img src="../../img/DosenV2_KDH_300x300.jpg"
 									style="border-radius: 20px; float: left; margin: 35px 30px 20px 20px;" />
 								<div style="margin-left: 15px; margin-top: 20px;">
 									<h1 style="font-weight: bold;">KRISTOPHER DAVID HARJONO, M.T.</h1>
@@ -755,7 +753,7 @@
 	<!-- FOOTER -->
 	<div class="w3-container background-black-theme">
 		<div class="w3-margin-top w3-margin-left">
-			<img style="width: 10%;" src="../img/logo-UNPAR.png">
+			<img style="width: 10%;" src="../../img/logo-UNPAR.png">
 		</div>
 		<div class="w3-margin-top w3-margin-left">
 			<h3 class="white-text-theme">e-College | Parahyangan Catholic University</h3>
