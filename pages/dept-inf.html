@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Department Informations</title>
+	<title>Majors Informations</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -45,9 +45,137 @@
 	</div>
 
 	<!-- CONTENT -->
-	<div class="w3-container background-theme content-head">
-		<div>
-			<p>CONTENT HERE</p>
+	<div class="w3-container background-theme content-head" style="display: flex; flex-direction: column; align-items: center;">
+		<div style="width: 70%; margin-top: 1.5%; margin-bottom: 2%;">
+			<div class="w3-card w3-center w3-round-large accent-theme" style="margin-bottom: 20px;">
+				<h2 class="w3-padding-large">Department Information</h2>
+			</div>
+			<div style="margin-left: 30px;">
+				<!-- Faculty 1 -->
+				<div style="margin-bottom: 10px;">
+					<button onClick="showCont('faculty-FTIS')" class="w3-button w3-block w3-left-align w3-round-large button-green faculty-button"><b>Fakultas Teknologi Informasi dan Sains</b></button>
+					<div class="w3-hide department-container" id="faculty-FTIS">
+						<button onClick="showCont('dept-mat')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Matematika</b></button>
+							<div class="w3-hide department-info-container" id="dept-mat">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-fisika')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Fisika</b></button>
+							<div class="w3-hide department-info-container" id="dept-fisika">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-if')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Teknik Informatika</b></button>
+							<div class="w3-hide department-info-container" id="dept-if">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+					</div>
+				</div>
+
+				<!-- Faculty 2 -->
+				<div style="margin-bottom: 10px;">
+					<button onClick="showCont('faculty-FTIS2')" class="w3-button w3-block w3-left-align w3-round-large button-green faculty-button"><b>Fakultas Ilmu Sosial dan Ilmu Politik</b></button>
+					<div class="w3-hide department-container" id="faculty-FTIS2">
+						<button onClick="showCont('dept-mat2')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Matematika</b></button>
+							<div class="w3-hide department-info-container" id="dept-mat2">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-fisika2')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Fisika</b></button>
+							<div class="w3-hide department-info-container" id="dept-fisika2">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-if2')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Teknik Informatika</b></button>
+							<div class="w3-hide department-info-container" id="dept-if2">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+					</div>
+				</div>
+
+				<!-- Faculty 3 -->
+				<div style="margin-bottom: 10px;">
+					<button onClick="showCont('faculty-FTIS3')" class="w3-button w3-block w3-left-align w3-round-large button-green faculty-button"><b>Fakultas Hukum</b></button>
+					<div class="w3-hide department-container" id="faculty-FTIS3">
+						<button onClick="showCont('dept-mat3')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Matematika</b></button>
+							<div class="w3-hide department-info-container" id="dept-mat3">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-fisika3')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Fisika</b></button>
+							<div class="w3-hide department-info-container" id="dept-fisika3">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-if3')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Teknik Informatika</b></button>
+							<div class="w3-hide department-info-container" id="dept-if3">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+					</div>
+				</div>
+
+				<!-- Faculty 4 -->
+				<div style="margin-bottom: 10px;">
+					<button onClick="showCont('faculty-FTIS4')" class="w3-button w3-block w3-left-align w3-round-large button-green faculty-button"><b>Fakultas Teknik</b></button>
+					<div class="w3-hide department-container" id="faculty-FTIS4">
+						<button onClick="showCont('dept-mat4')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Matematika</b></button>
+							<div class="w3-hide department-info-container" id="dept-mat4">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-fisika4')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Fisika</b></button>
+							<div class="w3-hide department-info-container" id="dept-fisika4">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-if4')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Teknik Informatika</b></button>
+							<div class="w3-hide department-info-container" id="dept-if4">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+					</div>
+				</div>
+
+				<!-- Faculty 5 -->
+				<div style="margin-bottom: 10px;">
+					<button onClick="showCont('faculty-FTIS5')" class="w3-button w3-block w3-left-align w3-round-large button-green faculty-button"><b>Fakultas Teknologi Industri</b></button>
+					<div class="w3-hide department-container" id="faculty-FTIS5">
+						<button onClick="showCont('dept-mat5')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Matematika</b></button>
+							<div class="w3-hide department-info-container" id="dept-mat5">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-fisika5')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Fisika</b></button>
+							<div class="w3-hide department-info-container" id="dept-fisika5">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+						<button onClick="showCont('dept-if5')" class="w3-button w3-block w3-left-align w3-round-large department-button"><b>Teknik Informatika</b></button>
+							<div class="w3-hide department-info-container" id="dept-if5">
+								<p>Program Studi Matematika UNPAR berdiri pada tanggal 20 April 1993 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 34/D/O/1993. Saat ini Program Studi Matematika UNPAR memperoleh akreditasi dengan peringkat A (Amat Baik) berdasarkan Keputusan Badan Akreditasi Nasional – Perguruan Tinggi No. 6204/SK/BAN-PT/Ak-PPJ/S/X/2020 berlaku sampai dengan 4 Oktober 2025.</p>
+								<p>Dalam kurun waktu lebih dari 25 tahun perjalanan ini, Program Studi Matematika telah banyak memperoleh pengakuan baik dari institusi pemerintah, masyarakat, maupun dari calon mahasiswa. Pengakuan dari pemerintah ditunjukkan dalam bentuk peringkat akreditasi A (Amat Baik) sejak tahun 2005, pengakuan dari masyarakat ditunjukkan dengan hampir 70% lulusan Program Studi Matematika UNPAR memerlukan waktu tunggu sekitar 0-3 bulan setelah lulus untuk memperoleh pekerjaan pertama, dan pengakuan dari para calon mahasiswa ditandai dengan jumlah peminat mahasiswa baik melalui jalur PMDK maupun USM yang cukup tinggi bila dibandingkan Program Studi Matematika di perguruan tinggi swasta lainnya.</p>
+								<p>Secara rutin juga Program Studi Matematika mengirimkan mahasiswanya untuk mengikuti kompetisi-kompetisi matematika tingkat nasional, seperti OSN-PTI, ONMIPA-PT, dan lain-lain.</p>
+							</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -69,4 +197,5 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="../script/script.js"></script>
 </html>

@@ -71,6 +71,8 @@ table{
     max-width: 320px;
 }
 
+/* Login page */
+
 .login-card {
     background-image: url("../img/login-background.png");
     background-size: 100% 100%;
@@ -79,6 +81,9 @@ table{
 .login-button {
     padding: 2% 5% 2% 5%;
 }
+
+
+/* Classes page */
 
 .row-of-lecture-cards {
     width: 100%; 
@@ -116,4 +121,25 @@ table{
     font-weight: bold;
     font-size: 1rem;
     margin-top: 1.5rem;
+}
+
+/* Department info page */
+
+.faculty-button {
+    width: 30rem;
+}
+
+.department-container {
+    margin-left: 30px; 
+    margin-top: 10px; 
+    padding-left: 10px; 
+    border-left: 5px solid #333333;
+}
+
+.department-button {
+    width: 20rem;
+}
+
+.department-info-container {
+    margin: 10px 0px 20px 50px;
 }
